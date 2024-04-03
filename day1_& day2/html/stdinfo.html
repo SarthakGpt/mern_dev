@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Handling</title>
+</head>
+
+<body>
+    <h1>Enter Student Information</h1>
+    <!-- <form action="#" method="get"> -->
+    <form action="#" method="post">
+        <label for="username">Enter user name</label><br>
+        <input type="text" name="username" placeholder="username" value="kiet" readonly/><br>
+
+        <label for="password">Enter user password</label><br>
+        <input type="password" name="password"><br><br>
+
+        <h2>Gender</h2>
+        <input type="radio" name="gender" >Male
+        <input type="radio" name="gender" >Female
+        <br><br>
+
+        <label for="color">Choose color</label><br>
+        <input type="color" name="color"/><br>
+
+        <label for="file">Choose file</label><br>
+        <input type="file" name="file" /><br><br>
+
+        <label for="comment">Enter Comment</label><br>
+        <textarea name="comment" cols="30" rows="10"></textarea><br>
+
+        <input type="submit" value="Login" name="login">
+        <input type="reset" value="Clean" name="clean">
+    </form>
+</body>
+
+</html>

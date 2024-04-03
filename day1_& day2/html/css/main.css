@@ -1,0 +1,28 @@
+h2{
+    color: rgb(5, 70, 3);
+}
+body{
+    background-color: rgba(11,252,122,0.4);
+}
+#heading{
+    color: red;
+    text-align: center;
+    /* text-align:right;
+    position: absolute;
+    bottom: 0;
+    right: 10px; 
+    top:0;*/
+    text-decoration: underline overline;
+    font-weight: bold;
+    font-family:'Verdana';
+    font-size: 40px;
+    font-style: italic;
+    text-transform: uppercase;
+    background-color: lightgray;
+    
+}
+#para1{
+    margin:20px;
+    text-align: justify;
+    text-indent: 20px;
+}
