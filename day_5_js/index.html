@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js First Page</title>
+</head>
+<!-- <body onload="openURL();"> -->
+<body>
+    <!-- method first -->
+    <button onclick="openURL(event);" name="openURL">Open URL</button> 
+    <button id="alert" name="alert">Open Alert</button>
+    <button id="msg" name="Msg">Open Message</button>
+    <!-- <button onmouseover="openURL();">Open URL</button> -->
+    <!-- <button onmouseout="openURL();">Open URL</button> -->
+    <p id="info"></p>
+    <script>
+        function openURL(event){
+        // window.open("https://www.google.com");
+        // document.location="https://www.google.com";
+            // history.forward();
+            // document.getElementById("info").innerHTML="<h1>Hello</h1>"
+            // document.getElementById("info").innerText="<h1>Hello</h1>"
+            // document.getElementById("info").innerText=Navigator.name;
+            // document.getElementById("info").innerText=navigator.userAgent;
+            // document.getElementById("info").innerText=navigator.appName;
+            // document.getElementById("info").innerText=navigator.appVersion;
+            console.log(event);
+            document.getElementById("info").innerText=event.target.name;
+        }
+        // const alertbtn=document.getElementById("alert");
+        //--- method second -------
+        // const alertbtn=document.querySelector("#alert");
+        const alertbtn=document.getElementById("alert");
+        alertbtn.onclick=(event)=>{
+            window.alert("welcome to js "+event.target.name);
+        }
+        //--  method third --
+      const msgbtn=document.getElementById("msg");
+      msgbtn.addEventListener("click",(event)=>{
+        alert("this is msg "+event.target.name);
+      })
+    </script>
+</body>
+</html>

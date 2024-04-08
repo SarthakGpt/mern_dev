@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
+    <script src="./bootstrap/js/bootstrap.js"></script>
+    <title>day_5 calculator</title>
+</head>
+<body>
+    <div class="container d-flex justify justify-content-center flex-column text-center m-2">
+        <h1 class="text text-primary">CALCULATOR</h1>
+        <div class="border border-2 border-danger rounded p-2 col-4 mx-auto">
+                <div>
+                    <label>Enter text here</label><br>
+                    <input type="text" id="display" class="col-12 text-end" readonly>
+
+                </div>
+                <div class="d-flex m-3 mx-auto">
+                    <button class="btn btn-outline btn-outline-primary col-4"  onclick="printnum('1');">1</button>
+                    <button class="btn btn-outline btn-outline-primary col-4" onclick="printnum('2');">2</button>
+                    <button class="btn btn-outline btn-outline-primary col-4" onclick="printnum('3');">3</button>
+                </div>
+                <div class="d-flex m-3 mx-auto">
+                    <button class="btn btn-outline btn-outline-secondary col-4" onclick="printnum('4');">4</button>
+                    <button class="btn btn-outline btn-outline-secondary col-4" onclick="printnum('5');">5</button>
+                    <button class="btn btn-outline btn-outline-secondary col-4" onclick="printnum('6');">6</button>
+                </div>
+                <div class="d-flex m-3 mx-auto">
+                    <button class="btn btn-outline btn-outline-info col-4" onclick="printnum('7');">7</button>
+                    <button class="btn btn-outline btn-outline-info col-4" onclick="printnum('8');">8</button>
+                    <button class="btn btn-outline btn-outline-info col-4" onclick="printnum('9');">9</button>
+                </div>
+                <div class="d-flex m-3 mx-auto">
+                    <button class="btn btn-outline-dark col-4" onclick="printnum('+');">+</button>
+                    <button class="btn btn-outline-dark col-4" onclick="printnum('-');">-</button>
+                    <button class="btn btn-outline-dark col-4" onclick="printnum('*');">*</button>
+                </div>
+                <div class=" d-flex mx-auto">
+                    <button class="btn btn-outline-dark col-6" onclick="tocalculate();">=</button>
+                    <button class="btn btn-outline-dark col-6" id="clear" onclick="clearresult();">clear</button>
+                </div>
+                
+        </div>
+    </div>
+    <script src="js/calculator.js"></script>
+</body>
+</html>
